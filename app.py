@@ -36,7 +36,7 @@ st.markdown("""
         background: linear-gradient(135deg, #0d1b2a 0%, #1b3a5c 100%);
         padding: 2rem;
         border-radius: 20px;
-        color: #f0e6d0;
+        color: #f9fafe;
         text-align: center;
         margin-bottom: 2rem;
         box-shadow: 0 10px 40px rgba(0,0,0,0.6);
@@ -47,7 +47,7 @@ st.markdown("""
         font-size: 2.8rem;
         font-weight: 900;
         margin: 0;
-        color: #f0e6d0;
+        color: #f9fafe;
         text-shadow: 0 2px 10px rgba(0,0,0,0.5);
     }
     
@@ -68,7 +68,7 @@ st.markdown("""
         text-align: center;
         height: 100%;
         transition: transform 0.3s;
-        color: #f0e6d0;
+        color: #f9fafe;
     }
     
     .metric-card:hover {
@@ -90,7 +90,7 @@ st.markdown("""
         border-right: 5px solid #c9a84c;
         margin: 1rem 0;
         box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        color: #f0e6d0;
+        color: #f9fafe;
     }
     
     .ai-card h4 { color: #c9a84c; margin: 0 0 0.5rem 0; font-weight: 700; }
@@ -102,7 +102,7 @@ st.markdown("""
         padding: 1.5rem;
         border-right: 5px solid #dc3545;
         margin: 1rem 0;
-        color: #f0e6d0;
+        color: #f9fafe;
     }
     
     .warning-card h4 { color: #dc3545; margin: 0 0 0.5rem 0; font-weight: 700; }
@@ -113,7 +113,7 @@ st.markdown("""
         padding: 1.5rem;
         border-right: 5px solid #28a745;
         margin: 1rem 0;
-        color: #f0e6d0;
+        color: #f9fafe;
     }
     
     .success-card h4 { color: #28a745; margin: 0; font-weight: 700; }
@@ -124,7 +124,7 @@ st.markdown("""
         padding: 1.5rem;
         border-right: 5px solid #17a2b8;
         margin: 1rem 0;
-        color: #f0e6d0;
+        color: #f9fafe;
     }
     
     .info-card h4 { color: #17a2b8; margin: 0 0 0.5rem 0; font-weight: 700; }
@@ -139,7 +139,7 @@ st.markdown("""
         justify-content: space-between;
         align-items: center;
         border: 1px solid #2a4a6a;
-        color: #f0e6d0;
+        color: #f9fafe;
         flex-wrap: wrap;
     }
     
@@ -178,13 +178,13 @@ st.markdown("""
     
     .stTabs [aria-selected="true"] {
         background: linear-gradient(135deg, #1b3a5c 0%, #2a5a7a 100%);
-        color: #f0e6d0;
+        color: #f9fafe;
         box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
     
     .stTabs [data-baseweb="tab"]:hover {
         background: #2a3a5a;
-        color: #f0e6d0;
+        color: #f9fafe;
     }
     
     /* جدول‌ها */
@@ -197,7 +197,7 @@ st.markdown("""
     
     .stDataFrame thead tr th {
         background: linear-gradient(135deg, #1b3a5c 0%, #2a5a7a 100%) !important;
-        color: #f0e6d0 !important;
+        color: #f9fafe !important;
         font-weight: 600 !important;
         text-align: center !important;
         padding: 12px !important;
@@ -219,7 +219,7 @@ st.markdown("""
         border-radius: 12px !important;
         font-weight: 600 !important;
         background: linear-gradient(135deg, #1b3a5c 0%, #2a5a7a 100%) !important;
-        color: #f0e6d0 !important;
+        color: #f9fafe !important;
         border: 1px solid #c9a84c !important;
         padding: 0.5rem 2rem !important;
         transition: all 0.3s ease !important;
@@ -469,7 +469,7 @@ def create_histogram(data, title, color='#c9a84c'):
         template='plotly_dark',
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
-        font=dict(family='Vazirmatn', color='#f0e6d0')
+        font=dict(family='Vazirmatn', color='#f9fafe')
     )
     return fig
 
@@ -480,7 +480,7 @@ def create_donut(values, labels, title, colors=None):
         labels=labels, values=values, hole=0.6,
         marker=dict(colors=colors),
         textinfo='label+percent',
-        textfont=dict(family='Vazirmatn', size=13, color='#f0e6d0')
+        textfont=dict(family='Vazirmatn', size=13, color='#f9fafe')
     )])
     fig.update_layout(
         title={'text': title, 'font': {'family': 'Vazirmatn', 'size': 18}},
@@ -488,7 +488,7 @@ def create_donut(values, labels, title, colors=None):
         template='plotly_dark',
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
-        font=dict(family='Vazirmatn', color='#f0e6d0'),
+        font=dict(family='Vazirmatn', color='#f9fafe'),
         showlegend=True,
         legend=dict(font=dict(family='Vazirmatn', size=12))
     )
@@ -504,7 +504,7 @@ def create_bar_chart(x, y, title, xlabel, ylabel, color='#c9a84c'):
         template='plotly_dark',
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
-        font=dict(family='Vazirmatn', color='#f0e6d0')
+        font=dict(family='Vazirmatn', color='#f9fafe')
     )
     return fig
 
