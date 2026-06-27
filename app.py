@@ -28,7 +28,8 @@ st.markdown("""
     
     /* پس‌زمینه تیره */
     .stApp {
-        background: #0a0e1a !important;
+        /*background: #0a0e1a !important;*/
+        background: #fff !important;
     }
     
     .main-header {
