@@ -1,17 +1,7 @@
-[project]
-name = "transformer-dashboard"
-version = "1.0.0"
-description = "Transformer Management Dashboard"
-readme = "README.md"
-requires-python = ">=3.8"
-dependencies = [
-    "streamlit>=1.35.0",
-    "pandas>=2.2.0",
-    "numpy>=2.0.0",
-    "plotly>=5.24.0",
-    "openpyxl>=3.1.5",
-]
-
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+streamlit = "1.28.1"
+pandas = "^2.0"
+plotly = "^5.16"
+numpy = "^1.24"
+openpyxl = "^3.1"
